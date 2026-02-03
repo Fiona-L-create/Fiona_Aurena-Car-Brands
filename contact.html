@@ -1,0 +1,174 @@
+<html>
+
+<head>
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="dist/css/bootstrap.css">
+    <script src="dist/js/bootstrap.js"></script>
+    <style>
+        .form-container {
+            width: 300px;
+            margin: 0 auto;
+        }
+
+        .header {
+            background-color: #1f2428;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            width: 100%;
+        }
+    
+         button {
+             width: 100%;
+             padding: 12px;
+              background-color: black;
+              color: white;
+              border: none;
+             font-weight: bold;
+             cursor: pointer;
+}
+        button:hover {
+         background-color: red;}
+       .header {
+  background-color: black;
+  color: red;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  width: 100%;}
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- section1 -->
+        <section class="row">
+            <div class="col-md-12">
+                <!-- navbar-expand-md will will expand the logo in large devices and collapse the logo in small devices -->
+                <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+                    <!-- navbar-brand places the logo or the name of the website -->
+                    <a href="" class="navbar-brand"><b
+                            style="font-family:'Times New Roman', Times, serif;font-size:xx-large;">Aurena Car Brands</b></a>
+                    <!-- navbar-toggler this only shows/visible when the navbar is collapsed -->
+                    <!-- data-bs-toggle="collapse"shows the buttonn will hide/show something -->
+                    <!-- data-bs-target "idpoints to which element should expand/collapse" -->
+                    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarcollapse">
+                        <!-- navbar-toggler-icon this is just to place the hamburger icon-->
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- collapse hides content on small devices -->
+                    <!-- navbar-collapse alligns the navbar items -->
+                    <!-- id connects to the button so that when clicked it can toggle from expand/collapse and viceversa. -->
+                    <div class="collapse navbar-collapse " id="navbarcollapse">
+                        <!-- navbar-nav ensures correct spacing and allignment -->
+                        <div class="navbar-nav">
+                            <!-- nav-link styling or individual linking and active show active link  in that page -->
+                            <a href="index.html" class="nav-link">Home</a>
+                            <a href="contact.html" class="nav-link active">Contact us</a>
+                            <a href="financing&services.html" class="nav-link">Financing/Services</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </section>
+    </div>
+        <!-- end of section 1 -->
+
+        <!-- section 3 -->
+        <section class="row justify-content-center mt-5 mb-5">
+            <div class="col-md-6 text-center">
+                <div class="card shadow text-center">
+                    <div class="card-header">
+                        <div class="header">CONTACT US</div>
+                    </div>
+                    <div class="card-body">
+                        <form action="">
+                            <input type="text" placeholder="Enter Name "><br><br>
+                            <input type="email" placeholder="Enter Email"><br><br>
+                            <input type="tel" placeholder="Enter Phone Number"><br>
+                    </div>
+
+                    <div class="form-container mb-5">
+                        <label for=""><b>Reason For Contact</b></label><br>
+                        <select name="" id="" class="bg-dark text-light">
+                                <option value="">Reason For Contact</option>
+                                <option>General Inquiry</option>
+                                <option>Sales</option>
+                                <option>Support</option>
+                                <option>Feedback</option>
+                        </select><br><br>
+                        <label for="" class="text-center">Prefered Contact Method</label><br>
+                        <input type="radio" name="Contact Method">Email <br>
+                        <input type="radio" name="Contact Method">Phone <br><br>
+                        <button type="submit">SEND MESSAGE</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="row justify-content-center mt-5 mb-5">
+            <div class="col-md-4 text-center">
+                <b>
+                    <h4>Location</h4>
+                </b>
+                <p>We are located along Thika Road near Safari Park Hotel, Parkland 5th Avenue near The Aghakhan
+                    Hospital or pay as a visit at either of our branches along Lang'ata opposite the carnivore exit.</p>
+                </form>
+            </div>
+
+        </section>
+
+
+        <!-- section footer -->
+        <section class="row bg-danger text-light p-4 mt-4">
+            <div class="col-md-4">
+                <h4 class="text-center">About Us</h4>
+                <b>
+                    <center>15 Years Of Experience</center>
+                </b>
+                <p>We humbly started early in 2005 as a Commercial Agency and later incorporated as Aurena Car Brands in
+                    mid
+                    2006. Under the stewardship of Many. We have in excess of four hundred and fifty clean new and
+                    second
+                    hand vehicles for sale. We are proud to have the country's best and most talented staff who are
+                    motivated by customer satisfaction. We seek to impact Kenya's vision 2030 by offering quality
+                    products,
+                    aligning and upholding the value of technology, customer satisfaction, employee satisfaction while
+                    upholding ethical and moral standards.</p>
+
+            </div>
+
+            <div class="col-md-4">
+                <h4 class="text-center">Contact Us</h4>
+                <form action="">
+                    <input type="email" placeholder="Enter Your Email" class="form-control" required><br>
+                    <textarea name="" id="" cols="30" rows="6" placeholder="Leave a Comment..."
+                        class="form-control"></textarea><br>
+                    <input type="submit" value="Send a Message" class="btn btn-dark">
+                </form>
+
+            </div>
+
+            <div class="col-md-4 text-center">
+                <h4 class="text-center">Stay Connected</h4>
+                <a href="https://www.facebook.com"><img src="images/fb.png" alt=""></a>
+                <a href="https://www.instagram.com"><img src="images/in.png" alt=""></a>
+                <a href="https://www.x.com"><img src="images/x.png" alt=""></a>
+                <p class="mt-3"> Our vision is to be the premier motor vehicle company in the Eastern and Central
+                    African
+                    region. Our promise is to go the extra mile to quench our customers' needs. Please pay as a visit at
+                    either of our branches along Thika Road near Safari Park Hotel, Parkland 5th Avenue near The
+                    Aghakhan
+                    Hospital or Lang'ata opposite the carnivore exit.</p>
+
+
+            </div>
+        </section>
+        <!-- end of section footer -->
+
+
+</body>
+
+</html>

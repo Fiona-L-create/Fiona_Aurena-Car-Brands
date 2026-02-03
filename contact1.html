@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    * Slideshow container */
+.slideshow {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Slide */
+.slide {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* Image */
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Dark overlay */
+.slide::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(0,0,0,0.7),
+    rgba(0,0,0,0.2)
+  );
+}
+
+/* Text on slide */
+.slide-text {
+  position: absolute;
+  top: 25%;
+  left: 8%;
+  color: white;
+  max-width: 600px;
+  z-index: 2;
+}
+
+/* Heading */
+.slide-text h1 {
+  font-size: 48px;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+
+/* Paragraph */
+.slide-text p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+    body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Header */
+.header {
+  background-color: black;
+  color: red;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  width: 100%;
+}
+
+/* Container */
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+/* Form */
+.contact-form {
+  background-color: white;
+  padding: 30px;
+  width: 350px;
+  border-top: 5px solid red;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Inputs */
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+/* Focus effect */
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  border-color: red;
+}
+
+/* Labels */
+.label {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+/* Radio buttons */
+.radio-group {
+  margin-bottom: 15px;
+}
+
+.radio-group label {
+  margin-right: 15px;
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: black;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: red;
+}
+  </style>
+</head>
+<body>
+    <div class="slideshow">
+  <div class="slide">
+    <img src="car.jpg" alt="Car Image">
+
+    <div class="slide-text">
+      <h1>BMW Customer Support.</h1>
+      <p>
+        Here you will find answers to your questions about your BMW,<br>
+        as well as contact details and links to key topics.
+      </p>
+    </div>
+  </div>
+</div>
+
+  <!-- Header -->
+  <div class="header">
+    CONTACT US
+  </div>
+
+  <!-- Contact Form Section -->
+  <div class="container">
+    <form class="contact-form">
+      
+      <input type="text" placeholder="Enter Your Name" required>
+      
+      <input type="email" placeholder="Enter Your Email" required>
+      
+      <select required>
+        <option value="">Reason For Contact</option>
+        <option>General Inquiry</option>
+        <option>Sales</option>
+        <option>Support</option>
+        <option>Feedback</option>
+      </select>
+
+      <p class="label">Preferred Contact Method</p>
+      <div class="radio-group">
+        <label><input type="radio" name="contact"> Email</label>
+        <label><input type="radio" name="contact"> Phone</label>
+      </div>
+
+      <textarea placeholder="Your Message" rows="4"></textarea>
+
+      <button type="submit">SEND MESSAGE</button>
+
+    </form>
+  </div>  <!-- section 2 -->
+             <section class="row mb-3 mt-3">
+                <div class="col-md-12">
+                    <!-- a carousel uses 12 columns because it covers the entire webpage from left to right -->
+                    <div class="carousel slide" data-bs-ride="carousel" id="mycarousel">
+                        <!-- the first div contains the major carousel that holds the carousel-inner and carousel-items -->
+                        <!-- wrapper -->
+                         <div class="carousel-inner">
+                            <!-- carousel items -->
+                             <!-- carousel-items contains the images to be displayed on the webpage -->
+                             <div class="carousel-item active">
+                                <!--there is only one active carousel item in a webpage -->
+                                <img src="images/slide1.jpg" alt="slide1" class="w-100 d-block">
+                             </div>
+
+                             <div class="carousel-item">
+                                <img src="images/slide2.jpg" alt="slide2" class="w-100 d-block">
+                             </div>
+
+                             <div class="carousel-item">
+                                <img src="images/slide3.jpg" alt="slide3" class="w-100 d-block">
+                             </div>
+
+                             <div class="carousel-item">
+                                <img src="images/slide4.jpg" alt="slide4" class="w-100 d-block">
+                             </div>
+
+                         </div>
+                         <!-- controllers -->
+                          <!-- the anchor tag inside the controllers are used to design the apperance of the buttons ansd their functional -->
+                           <!-- what enables the slides to move is the functionality of java script -->
+                            <!-- the class input inside the span is to move the prev and next icon on the slides displayed -->
+                             <!-- the class input inside the anchor tag is to design the prev or next into an icon -->
+                          <a href="#mycarousel" data-bs-slide="prev" class="carousel-control-prev ">
+                            <span class="carousel-control-prev-icon bg-danger"></span>
+                          </a>
+                          <a href="#mycarousel" data-bs-slide="next" class="carousel-control-next">
+                            <span class="carousel-control-next-icon bg-danger"></span>
+                          </a>
+
+                    </div>
+
+                </div>
+
+             </section>
+
+
+             <div class="carousel">
+  <div class="slide">Image 1</div>
+  <div class="slide">Image 2</div>
+  <div class="slide">Image 3</div>
+</div>
+
+
+
+
+
+
+
+</body>
+</html>

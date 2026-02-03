@@ -1,0 +1,247 @@
+<html>
+
+<head>
+    <title>Financing/Services_Page</title>
+    <link rel="stylesheet" href="dist/css/bootstrap.css">
+    <script src="dist/js/bootstrap.js"></script>
+    <style>
+          /* Slideshow container */
+        .slideshow {
+            width: 100%;
+            height: 80vh;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Slide */
+        .slide {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        /* Image */
+        .slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Dark overlay */
+        .slide::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to right,
+                    rgba(0, 0, 0, 0.7),
+                    rgba(0, 0, 0, 0.2));
+        }
+
+        /* Text on slide */
+        .slide-text {
+            position: absolute;
+            top: 25%;
+            left: 8%;
+            color: white;
+            max-width: 600px;
+            z-index: 2;
+        }
+
+        /* Heading */
+        .slide-text h1 {
+            font-size: 48px;
+            font-weight: 300;
+            margin-bottom: 15px;
+        }
+
+        /* Paragraph */
+        .slide-text p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        /* OPTIONAL RED ACCENT */
+        .slide-text h1 span {
+            color: red;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+           <!-- section1 -->
+             <section class="row">
+                <div class="col-md-12">
+                    <!-- navbar-expand-md will will expand the logo in large devices and collapse the logo in small devices -->
+                    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+                        <!-- navbar-brand places the logo or the name of the website -->
+                        <a href="" class="navbar-brand"><b style="font-family:'Times New Roman', Times, serif;font-size:xx-large;">Aurena Car Brands</b></a>
+                        <!-- navbar-toggler this only shows/visible when the navbar is collapsed -->
+                         <!-- data-bs-toggle="collapse"shows the buttonn will hide/show something -->
+                          <!-- data-bs-target "idpoints to which element should expand/collapse" -->
+                        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarcollapse">
+                            <!-- navbar-toggler-icon this is just to place the hamburger icon-->
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <!-- collapse hides content on small devices -->
+                         <!-- navbar-collapse alligns the navbar items -->
+                          <!-- id connects to the button so that when clicked it can toggle from expand/collapse and viceversa. -->
+                        <div class="collapse navbar-collapse " id="navbarcollapse">
+                            <!-- navbar-nav ensures correct spacing and allignment -->
+                            <div class="navbar-nav">
+                                <!-- nav-link styling or individual linking and active show active link  in that page -->
+                                <a href="index.html" class="nav-link">Home</a>
+                                <a href="contact.html" class="nav-link">Contact us</a>
+                                <a href="financing&services.html" class="nav-link active">Financing/Services</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+             </section>
+             <!-- end of section 1 -->
+
+               <!-- section 2 -->
+             <section class="row">
+                <div class="col-md-12 mt-3">
+                    <!-- a carousel uses 12 columns because it covers the entire webpage from left to right -->
+                    <div class="carousel slide" data-bs-ride="carousel" id="mycarousel">
+                        <!-- the first div contains the major carousel that holds the carousel-inner and carousel-items -->
+                        <!-- wrapper -->
+                         <div class="carousel-inner">
+                            <!-- carousel items -->
+                             <!-- carousel-items contains the images to be displayed on the webpage -->
+                             <div class="carousel-item active">
+                                <!--there is only one active carousel item in a webpage -->
+                               <div class="slideshow">
+                                  <div class="slide active">
+                                     <img src="images/no44.jpg" alt="slide1" class="w-100 d-block">
+                                     <div class="slide-text">
+                                        <h1>Performance Redefined.</h1>
+                                        <p>Experience power, precision, and control on every drive.</p>
+                                     </div>
+                                 </div>
+                               </div>
+                            </div>
+
+                             <div class="carousel-item">
+                                  <div class="slide">
+                                    <img src="images/no2.jpg" alt="slide2" class="w-100 d-block">
+                                     <div class="slide-text">
+                                      <h1>Drive with Confidence.</h1>
+                                      <p>Safety, comfort, and style in every journey.</p>
+                                     </div>
+                                  </div>
+                             </div>
+
+                             <div class="carousel-item">
+                                 <div class="slide">
+                                   <img src="images/no3.jpg" alt="slide3" class="w-100 d-block">
+                                      <div class="slide-text">
+                                       <h1>Designed for the Future.</h1>
+                                       <p>Luxury engineering combined with modern innovation.</p>
+                                      </div>
+                                 </div>
+                             </div>
+                         </div>
+                         <!-- controllers -->
+                          <!-- the anchor tag inside the controllers are used to design the apperance of the buttons ansd their functional -->
+                           <!-- what enables the slides to move is the functionality of java script -->
+                            <!-- the class input inside the span is to move the prev and next icon on the slides displayed -->
+                             <!-- the class input inside the anchor tag is to design the prev or next into an icon -->
+                          <a href="#mycarousel" data-bs-slide="prev" class="carousel-control-prev ">
+                            <span class="carousel-control-prev-icon bg-danger"></span>
+                          </a>
+                          <a href="#mycarousel" data-bs-slide="next" class="carousel-control-next">
+                            <span class="carousel-control-next-icon bg-danger"></span>
+                          </a>
+                    </div>
+                </div>
+             </section>
+             <marquee behavior="alternate" direction="" class="mb-3"><h1>Welcome To Aurena Car Brands</h1></marquee>
+
+            
+             <!-- section 2 -->
+        <section class="row">
+            <div class="col-md-6">
+                <p>We organize financing for our clients in partnership with reputable financial and banking
+                    institutions.
+                    The interest rates are competitive starting from 13% per year on a reducing balance, with flexible
+                    monthly installments up to 48 months.
+                    For a used saloon car, commercial pick-up and (or) cargo vehicle financing is up to 80% with a
+                    maximum repayment period of 48 Months thats 4 years; for a brand new one the financing is up to 80%
+                    with a maximum repayment period of 5 years.</p>
+                    The requirements for qualifications : <br>
+
+                    For an individual:
+                    <ul>
+                   <li> Complete the loan application form</li>
+                   <li> 6 months (latest) original bank statements</li>
+                   <li> Copy of PIN and national ID</li>
+                   <li> 3 months current payslips (if employed)</li>
+                   <li> Original KRA search certificate for used vehicles</li>
+                    <li>Original market valuation report</li>
+                    </ul>
+                    For a business / company:
+                    <ul>
+                   <li> 6 months current bank statements</li>
+                    <li>Audited accounts for the last 3 years</li>  
+                   <li>Copy of PIN and certificate of incorporation / registration</li>
+                   <li>Board resolution</li>
+                   <li> Memo & articles of association</li>
+                    </ul>
+            </div>
+            <div class="col-md-6 mb-4">
+                <p>Some of the partnered companies include:</p>
+                <img src="images/finances.PNG" alt="">
+            </div>
+            <!-- end of section 2 -->
+             
+
+            <!-- section 3 -->
+             <div class="text-center"><h1>Aurena Car Brands</h1></div>
+             <p style="text-align: center;">Aurena Car Brand blog is about everything; cars, life and business. You can register to participate in our blogs and add value. At Aurena Car Brands, we believe in exchanging knowledge with the community around us. We are eager to read every comment you make on our blogs as a way of improving our brand and services. We also invite funs to be our guest bloggers and share their knowledge with the world.</p>
+             <!-- end of section 3 -->
+
+              <!-- section footer -->
+                    <section class="row bg-danger text-light p-4 mt-4">
+                        <div class="col-md-4">
+                            <h4 class="text-center">About Us</h4>
+                            <b><center>15 Years Of Experience</center></b>
+                            <p>We humbly started early in 2005 as a Commercial Agency and later incorporated as Aurena Car Brands in mid 2006. Under the stewardship of Many. We have in excess of four hundred and fifty clean new and second hand vehicles for sale. We are proud to have the country's best and most talented staff who are motivated by customer satisfaction. We seek to impact Kenya's vision 2030 by offering quality products, aligning and upholding the value of technology, customer satisfaction, employee satisfaction while upholding ethical and moral standards.</p>
+
+                        </div>
+
+                        <div class="col-md-4">
+                            <h4 class="text-center">Contact Us</h4>
+                            <form action="">
+                                <input type="email" placeholder="Enter Your Email" class="form-control" required><br>
+                                <textarea name="" id="" cols="30" rows="6" placeholder="Leave a Comment..." class="form-control"></textarea><br>
+                                <input type="submit" value="Send a Message" class="btn btn-dark">
+                            </form>
+
+                        </div>
+
+                        <div class="col-md-4 text-center">
+                            <h4 class="text-center">Stay Connected</h4>
+                            <a href="https://www.facebook.com"><img src="images/fb.png" alt=""></a>
+                            <a href="https://www.instagram.com"><img src="images/in.png" alt=""></a>
+                            <a href="https://www.x.com"><img src="images/x.png" alt=""></a>
+                            <p class="mt-3"> Our vision is to be the premier motor vehicle company in the Eastern and Central African region. Our promise is to go the extra mile to quench our customers' needs. Please pay as a visit at either of our branches along Thika Road near Safari Park Hotel, Parkland 5th Avenue near The Aghakhan Hospital or Lang'ata opposite the carnivore exit.</p>
+
+
+                        </div>
+                    </section>
+                    <!-- end of section footer -->
+                     
+
+
+        </section>
+
+    </div>
+</body>
+
+</html>
